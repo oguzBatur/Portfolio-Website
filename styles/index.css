@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Glory:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+
+
+
+*{
+	scroll-behavior: smooth;
+
+}
+body{
+	background-color: lightblue;
+}
+
+
+*{
+	margin: 0;
+	font-family: 'Glory', sans-serif;
+	box-sizing: border-box;
+}		
+#nav-container{
+	display: flex;	
+	background: rgb(39, 39, 39);	
+	align-items: center;
+	height: 100px;
+	width: 100%;
+	position: fixed;
+	transition: 0.2s ease-in-out;
+}
+#logo-container{
+	display: flex;
+	align-items: center;
+	justify-content: center;	
+}
+#logo-container > h2{
+	color: white;
+	font-style: italic;
+	transition: 0.2s ease-in-out;
+
+}
+#logo{
+	width: 100px;
+	border-radius: 100px;
+	margin: 20px;
+	transition: 0.2s ease-in-out;
+}
+li{
+	list-style: none;
+}
+a{
+	color: white;
+	text-decoration: none;
+	padding: 10px;
+	text-align: center;
+}
+#nav{
+	display: flex;
+	width: 100%;
+	justify-content: center;
+}
+#nav-list{
+	display: flex;
+	width: 60%;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	font-size: 1.3rem;
+	text-transform: uppercase;
+}
+.nav-element{
+	transition: 0.3s ease-in-out;
+}
+.nav-element:hover{
+	font-size: 1.4rem;	
+}
+
+
+#cover{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+	color: white;
+	
+
+}
+h1{
+	font-size: 3.5rem;
+}
+p{
+	font-size: 1.25rem;
+	margin: 10px;
+
+}
+#cover-container{
+	background-color: rgba(0, 100, 100, 0.6);
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	height: 100vh;
+
+}
+#here{
+	color: lightsteelblue;
+	text-decoration: underline;
+	text-decoration-style: dotted;
+}
+#about-me{
+	height: 100vh;
+	background-image: url("/imges/1625026982521.jpeg");
+	width: 100%;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+#about-me-text{
+	color: white;
+	width: 40%;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 100px;
+}
+#about-container{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(72, 73, 73, 0.575);
+	display: flex;
+	align-items: center;
+	justify-content: flex-end ;
+
+}
+#text-about{
+ 	background-color: rgba(0, 0, 0, 0.521);
+	padding: 30px;
+}
+#info{
+	text-align: center;
+	width: 50%;
+	color: white;
+	margin-right: auto;
+	padding: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#info > div{
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+@media (max-width: 800px){
+	.nav-element{
+		font-size: 0.7rem;
+	}
+	.nav-element:hover{
+		font-size: 0.8rem;
+	}
+	#text-about{
+		font-size: 0.75rem
+	}
+	
+	#about-container{
+
+		flex-direction: column;
+	
+	}
+	#about-me{
+		height: 200vh;
+	}
+	#about-me-text{
+		width: 100%;
+	}
+	#info{
+		width: 100%;
+		margin-bottom: auto;
+	}
+
+}
+@media (min-width: 1200) {
+	#text-about{
+		font-size: 1.5rem
+	}
+}
+
+
+#work-h1{
+	color: white;
+	text-align: center;
+	margin: 50px;
+}
+
+#workin{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.work{
+	background-color: darkred;
+	height: 500px;
+	width: 400px;
+	margin: 10px;
+	
+	transition: 0.3s ease-in-out;
+	border-radius: 5px;
+}
+.work:hover{
+	height: 510px;
+	width: 410px;
+	margin: 0px;
+}
+.work > a > h3{
+	margin: 20px;
+}
+.work > a{
+	background-color: rgba(0, 0, 0, 0.767); 
+	width: 100%; 
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	color: white;
+}
+#workin > li{
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position-x: center;
+	background-position-y: center;
+
+
+}
+#contact{
+	height: 90vh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+}
+
+#contact a{
+	padding: 0;
+	color: lightyellow;
+
+
+}
+#contact-container{
+	height: 100%;
+	width: 30%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	font-size: 3em;
+	text-align: center;
+}
+
+footer{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+footer  i{
+	margin: 10px;
+}
